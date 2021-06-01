@@ -1,0 +1,13 @@
+alter table accounts add column nome char(200);
+alter table accounts add column email char(100);
+
+
+DROP TABLE IF EXISTS `news`;
+CREATE TABLE `news` (
+  `id` int(15) NOT NULL auto_increment,
+  `titulo` varchar(200) default NULL,
+  `texto` longtext,
+  `autor` varchar(200) default NULL,
+  `data` varchar(100) default NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
